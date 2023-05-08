@@ -1,0 +1,18 @@
+[package]
+name = "ciphey"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libciphey = { path = "../libciphey" }
+ciphey-kvstore = { path = "../ciphey-kvstore" }
+libciphey-fs = { path = "../libciphey-fs" }
+age = { version = "0.8", features = ["armor"] }
+uuid = { version = "1.0.0", features = ["v4"] }
+xflags = "0.2.4"
+rpassword = "7.0"
+
+[dev-dependencies]
+fastrand = "1"
